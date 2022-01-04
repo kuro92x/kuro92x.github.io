@@ -8,11 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-go@v1
-        with:
-          go-version: 1.16
       - name: install hugo
-        run: snap install hugo --channel=extended
+        run: sudo snap install hugo --channel=extended
       - name: run hugo binary
         run: hugo -D
         working-directory: ${{ github.workspace }}/mysite
