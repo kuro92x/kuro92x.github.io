@@ -14,10 +14,10 @@ jobs:
         run: hugo -D
         working-directory: ${{ github.workspace }}/mysite
       - name: move to /docs
-        run: mv pulic/* ../docs
+        run: mv public/* ../docs
         working-directory: ${{ github.workspace }}/mysite
       - name: rm public
-        run: rm -r pulic
+        run: rm -r public
         working-directory: ${{ github.workspace }}/docs
       - name: git setting
         run: |
