@@ -10,11 +10,11 @@ jobs:
       - uses: actions/checkout@master
       - name: install hugo
         run: sudo snap install hugo --channel=extended
-      - name: run hugo binary
-        run: hugo -D
+      - name: run hugo
+        run: hugo -D; ls -al
         working-directory: ${{ github.workspace }}/mysite
       - name: create /docs if not exist
-        run: if [ ! -d ./docs ]; then mkdir docs; fi
+        run: rm -rf ./docs; then mkdir docs
       - name: move to /docs
         run: mv public/* ../docs
         working-directory: ${{ github.workspace }}/mysite
