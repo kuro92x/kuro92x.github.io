@@ -11,7 +11,7 @@ jobs:
       - name: install hugo
         run: sudo snap install hugo --channel=extended
       - name: run hugo
-        run: hugo -D; ls -al
+        run: hugo -D; ls -al public
         working-directory: ${{ github.workspace }}/mysite
       - name: create /docs if not exist
         run: rm -rf ./docs; mkdir docs
