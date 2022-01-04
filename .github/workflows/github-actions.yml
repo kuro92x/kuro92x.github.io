@@ -20,7 +20,7 @@ jobs:
         working-directory: ${{ github.workspace }}/mysite
       - name: rm public
         run: rm -r public
-        working-directory: ${{ github.workspace }}/docs
+        working-directory: ${{ github.workspace }}/mysite
       - name: git setting
         run: |
           git config user.name actions-user
