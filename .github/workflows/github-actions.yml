@@ -14,7 +14,7 @@ jobs:
         run: hugo -D
         working-directory: ${{ github.workspace }}/mysite
       - name: create /docs if not exist
-        run: if [ ! -d ./docs ]; then mkdir docs if
+        run: if [ ! -d ./docs ]; then mkdir docs fi
       - name: move to /docs
         run: mv public/* ../docs
         working-directory: ${{ github.workspace }}/mysite
