@@ -13,6 +13,12 @@ jobs:
       - name: run hugo binary
         run: hugo -D
         working-directory: ${{ github.workspace }}/mysite
+      - name: move to /docs
+        run: mv pulic/* ../docs
+        working-directory: ${{ github.workspace }}/mysite
+      - name: rm public
+        run: rm -r pulic
+        working-directory: ${{ github.workspace }}/docs
       - name: git setting
         run: |
           git config user.name actions-user
