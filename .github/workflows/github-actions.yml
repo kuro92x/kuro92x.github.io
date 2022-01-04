@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - name: git setting
+        run: |
+          git config user.name actions-user
+          git config user.email action@github.com
+          git submodule update --init --recursive
       - name: install hugo
         run: sudo snap install hugo --channel=extended
       - name: run hugo
@@ -21,10 +26,6 @@ jobs:
       - name: rm public
         run: rm -r public
         working-directory: ${{ github.workspace }}/mysite
-      - name: git setting
-        run: |
-          git config user.name actions-user
-          git config user.email action@github.com
       - name: Commit files
         run: |
           git add -A
