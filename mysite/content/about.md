@@ -14,7 +14,7 @@ author = "Hugo Authors"
 ## Links
 
 * Twitter: [@kuro92x](https://twitter.com/kuro92x)
-* GitHub: [kuro92x](https://github.com/kuro92x/kuro92x.github.io)
+* GitHub: [kuro92x](https://github.com/kuro92x)
 * Blog1: [kuro92x’s diary](https://kuro92x.hatenablog.jp)
 * Blog2: [kuro92xの技術日記](https://kuro92x.hatenablog.com)
 
