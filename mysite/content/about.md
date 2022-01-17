@@ -15,6 +15,6 @@ author = "Hugo Authors"
 
 * Twitter: [@kuro92x](https://twitter.com/kuro92x)
 * GitHub: [kuro92x](https://github.com/kuro92x)
-* Blog1: [kuro92x’s diary](https://kuro92x.hatenablog.jp)
+* Blog1: [FIREを目指す新人プログラマのブログ](https://kuro92x.hatenablog.jp)
 * Blog2: [kuro92xの技術日記](https://kuro92x.hatenablog.com)
 
